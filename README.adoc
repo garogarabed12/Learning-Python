@@ -12,13 +12,13 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-=== Important Bulletpoints.
+=== Important Bulletpoints:
 
 * When trying to determine the code that they need to solve a particular problem, Python programmers often favor experimenting with code snippets at the shell.
 The shell provides two interactive functions that work at the `>>>` prompt. The `dir` function lists an object’s attributes, whereas help provides access to the Python docs.
 
 
-=== Clean Code Practices.
+=== Clean Code Practices:
 
 * Small:
 ** A function should be small because it is easier to know what the function does. How small is small?
