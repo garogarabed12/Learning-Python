@@ -1,0 +1,58 @@
+= Head First Python
+
+:icons: font
+:icon-set: fa
+:source-highlighter: rouge
+:experimental:
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+=== Important Bulletpoints.
+
+* When trying to determine the code that they need to solve a particular problem, Python programmers often favor experimenting with code snippets at the shell.
+The shell provides two interactive functions that work at the `>>>` prompt. The `dir` function lists an object’s attributes, whereas help provides access to the Python docs.
+
+
+=== Clean Code Practices.
+
+* Small:
+** A function should be small because it is easier to know what the function does. How small is small?
+There should rarely be more than 20 lines of code in one function. It can be as small as below.
+The indent level of a function should not be greater than one or two.
+
+* Do One Task:
+** A function should complete only one task, not multiple tasks.
+
+* One Level Of Abstraction:
+[quote, PCMag]
+The level of abstraction is the amount of complexity by which a system is viewed or programmed.
+The higher the level, the less detail. The lower the level, the more detail.
++
+** To make the code within the function to be at the same level of abstraction, we can put the low-level code into another function.
+
+* Duplication:
+** We should avoid duplication because:
+*** It is redundant
+*** If we make a change to one piece of code, we need to remember to make the same change to another piece of code. If we forget to do so, we will introduce bugs into our code.
+
+** We can eliminate duplication by putting the duplicated code into a function.
+
+* Descriptive Names:
+[quote, Clean Code by Robert C. Martin]
+A long descriptive name is better than a short enigmatic name. A long descriptive name is better than a long descriptive comment.
++
+** Don’t be afraid to write long names. It is better to write long names rather than write vague names.
+
+* Have Fewer than 4 Arguments:
+** A function should not have more than 3 arguments since it is a sign that the function is performing multiple tasks.
+It is also difficult to test a function with more than 3 different combinations of variables.
++
+[TIP]
+If a function has more than 3 arguments, consider turning it into a class.
+
+Source: https://towardsdatascience.com/python-clean-code-6-best-practices-to-make-your-python-functions-more-readable-7ea4c6171d60[towardsdatascience]
