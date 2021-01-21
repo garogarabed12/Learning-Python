@@ -20,6 +20,14 @@ The shell provides two interactive functions that work at the `>>>` prompt. The 
 
 === Clean Code Practices:
 
+[IMPORTANT]
+Stop writing Python functions that take more than three minutes to understand!
+
+Have you ever looked at a function you wrote one month earlier and found it difficult to understand in 3 minutes? If that is the case, it is time to refactor your code. If it takes you more than 3 minutes to understand your code, imagine how long it would take for your teammates to understand your code.
+If you want your code to be reusable, you want it to be readable. +
+These practices will make your functions more readable and easier to detect errors.
+
+
 * Small:
 ** A function should be small because it is easier to know what the function does. How small is small?
 There should rarely be more than 20 lines of code in one function. It can be as small as below.
