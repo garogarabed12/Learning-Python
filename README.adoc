@@ -24,7 +24,7 @@ The shell provides two interactive functions that work at the `>>>` prompt. The 
 * If you want to have another variable reference an existing list, use the assignment operator (`=`).
 If you want to make a copy of the objects in an existing list and use them to initialize a new list, be sure to use the `copy` method instead.
 
-=== Meet the four Built-in Data Structures.
+== Meet the four Built-in Data Structures.
 
 Python comes with four built-in data structures that you can use to hold any collection of objects, and they are *list, tuple, dictionary*, and *set*.
 Note that by “built-in” we mean that lists, tuples, dictionaries, and sets are always available to your code and they do not need to be imported prior to use: each of these
