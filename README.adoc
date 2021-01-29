@@ -21,6 +21,9 @@ The shell provides two interactive functions that work at the `>>>` prompt. The 
 
 * Shrinking a list at runtime is possible due to the inclusion of the `remove` and `pop` methods.
 
+* If you want to have another variable reference an existing list, use the assignment operator (`=`).
+If you want to make a copy of the objects in an existing list and use them to initialize a new list, be sure to use the `copy` method instead.
+
 === Meet the four Built-in Data Structures.
 
 Python comes with four built-in data structures that you can use to hold any collection of objects, and they are *list, tuple, dictionary*, and *set*.
@@ -43,6 +46,32 @@ in which you add key/value pairs to a dictionary is not maintained by the interp
 related objects while ensuring none of the objects are duplicated. The fact that sets let you perform unions, intersections, and differences is an
 added bonus (especially if you are a math type who loves set theory). Sets, like lists and dictionaries, can grow (and shrink) as needed. Like dictionaries,
 sets are unordered, so you cannot make assumptions about the order of the objects in your set.
+
+=== List Slices in Action
+
+You can put start, stop, and step inside square brackets. When used with lists, start, stop, and step are specified within the square brackets and
+are separated from one another by the colon (:) character: `letters[start:stop:step]`
+
+* When *start* is missing, it has a default value of 0.
+* When *stop* is missing, it takes on the maximum value allowable for the list.
+* When *step* is missing, it has a default value of 1.
+
+[source, python]
+----
+letters = ['D', 'o', 'n', "'", 't', ' ', 'p', 'a', 'n', 'i', 'c', '!']
+
+>>> letters[0:10:3]
+['D', "'", 'p', 'i']
+
+>>> letters[3:]
+["'", 't', ' ', 'p', 'a', 'n', 'i', 'c', '!']
+
+>>> letters[:10]
+['D', 'o', 'n', "'", 't', ' ', 'p', 'a', 'n', 'i']
+
+>>> letters[::2]
+['D', 'n', 't', 'p', 'n', 'c']
+----
 
 
 Source: Head-First Python Book.
