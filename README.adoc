@@ -15,7 +15,31 @@ endif::[]
 === Important Bulletpoints:
 
 * When trying to determine the code that they need to solve a particular problem, Python programmers often favor experimenting with code snippets at the shell.
-The shell provides two interactive functions that work at the `>>>` prompt. The `dir` function lists an object’s attributes, whereas help provides access to the Python docs.
+The shell provides two interactive functions that work at the `>>>` prompt. The `dir` function lists an object’s attributes, whereas `help` provides access to the Python docs.
+
+=== Meet the four Built-in Data Structures.
+
+Python comes with four built-in data structures that you can use to hold any collection of objects, and they are *list, tuple, dictionary*, and *set*.
+Note that by “built-in” we mean that lists, tuples, dictionaries, and sets are always available to your code and they do not need to be imported prior to use: each of these
+data structures is part of the language.
+
+* List: An ordered mutable collection of objects. A list in Python is very similar to the notion of an array in other programming languages
+
+* Tuple: An ordered immutable collection of objects. A tuple is an immutable list. This means that once you assign objects to a tuple,
+the tuple cannot be changed under any circumstance.
+
+* Dictionary: An unordered set of key/value pairs Depending on your programming background, you may already know what a
+dictionary is, but you may know it by another name, such as associative array, map, symbol table, or hash.
+
+[WARNING]
+Something to watch out for when using a dictionary is that you cannot rely upon the internal ordering used by the interpreter. Specifically, the order
+in which you add key/value pairs to a dictionary is not maintained by the interpreter, and has no meaning (to Python).
+
+* Set: An unordered set of unique objects. In Python, a set is a handy data structure for remembering a collection of
+related objects while ensuring none of the objects are duplicated. The fact that sets let you perform unions, intersections, and differences is an
+added bonus (especially if you are a math type who loves set theory). Sets, like lists and dictionaries, can grow (and shrink) as needed. Like dictionaries,
+sets are unordered, so you cannot make assumptions about the order of the objects in your set.
+
 
 Source: Head-First Python Book.
 
