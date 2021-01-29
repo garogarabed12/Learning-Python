@@ -34,7 +34,7 @@ the tuple cannot be changed under any circumstance.
 
 * Dictionary: An unordered set of key/value pairs Depending on your programming background, you may already know what a
 dictionary is, but you may know it by another name, such as associative array, map, symbol table, or hash.
-
++
 [WARNING]
 Something to watch out for when using a dictionary is that you cannot rely upon the internal ordering used by the interpreter. Specifically, the order
 in which you add key/value pairs to a dictionary is not maintained by the interpreter, and has no meaning (to Python).
