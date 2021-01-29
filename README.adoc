@@ -17,6 +17,10 @@ endif::[]
 * When trying to determine the code that they need to solve a particular problem, Python programmers often favor experimenting with code snippets at the shell.
 The shell provides two interactive functions that work at the `>>>` prompt. The `dir` function lists an object’s attributes, whereas `help` provides access to the Python docs.
 
+* Growing a list at runtime is possible due to the inclusion of a handful of list methods, which include `append`, `extend`, and `insert`.
+
+* Shrinking a list at runtime is possible due to the inclusion of the `remove` and `pop` methods.
+
 === Meet the four Built-in Data Structures.
 
 Python comes with four built-in data structures that you can use to hold any collection of objects, and they are *list, tuple, dictionary*, and *set*.
