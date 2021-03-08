@@ -91,6 +91,21 @@ letters = ['D', 'o', 'n', "'", 't', ' ', 'p', 'a', 'n', 'i', 'c', '!']
 
 Source: Head-First Python Book.
 
+== Dictionaries
+
+* By default, every dictionary is unordered, as insertion order is not maintained. If you need to sort a dictionary
+on output, use the `sorted` built-in function.
+
+* The `items` method allows you to iterate over a dictionary by row—that is, by key/value pair.
+On each iteration, the `items` method returns the next key and its associated value to your `for` loop.
+
+* Trying to access a nonexistent key in an existing dictionary results in a `KeyError`. When a `KeyError` occurs,
+your program crashes with a runtime error.
+
+* You can avoid a `KeyError` by ensuring every key in your dictionary has a value associated with it before you try to access it.
+Although the `in` and `not in` operators can help here, the established technique is to use the `setdefault` method instead.
+
+
 == Clean Code Practices:
 
 [IMPORTANT]
