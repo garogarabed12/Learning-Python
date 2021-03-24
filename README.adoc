@@ -39,6 +39,14 @@ data you’re working with exhibits some structure, lists can be a bad choice.
 stores a key, while the second contains a value. Each row is known as a key/value pair, and a dictionary can grow to contain any number of key/value pairs.
 Like lists, dictionaries grow and shrink on demand.
 
+* Python’s triple-quoted strings can be used to add multiline comments to a function. When they are used in this way, they are known as docstrings.
+
+* Function annotations can be used to document the type of your function’s arguments, as well as its return type.
+
+    * Any function argument can be assigned a default value in the function’s `def` line. When this happens, the specification of a value for that argument during a function’s invocation is optional.
+
+* As well as assigning arguments by position, you can use keywords, too. When you do, any ordering is acceptable (as any possibility of ambiguity is removed by the use of keywords and position doesn’t matter anymore).
+
 == Meet the four Built-in Data Structures.
 
 Python comes with four built-in data structures that you can use to hold any collection of objects, and they are *list, tuple, dictionary*, and *set*.
@@ -88,9 +96,6 @@ letters = ['D', 'o', 'n', "'", 't', ' ', 'p', 'a', 'n', 'i', 'c', '!']
 ['D', 'n', 't', 'p', 'n', 'c']
 ----
 
-
-Source: Head-First Python Book.
-
 == Dictionaries
 
 * By default, every dictionary is unordered, as insertion order is not maintained. If you need to sort a dictionary
@@ -105,6 +110,41 @@ your program crashes with a runtime error.
 * You can avoid a `KeyError` by ensuring every key in your dictionary has a value associated with it before you try to access it.
 Although the `in` and `not in` operators can help here, the established technique is to use the `setdefault` method instead.
 
+== Follow Best Practice As Per the PEPs
+
+When it comes to formatting your code, the Python programming
+community has spent a long time establishing and documenting best practice. This best practice is known as `PEP 8`. PEP is shorthand for “Python Enhancement Protocol.”
+
+`PEP 8` is the style guide for Python code. It is recommended reading for all Python programmers, and it is the document that suggests the “be consistent” advice for string quotes described on the last page. Take the time to read `PEP 8` at least once. Another document, `PEP 257`, offers conventions on how to format docstrings, and it’s worth  reading, too.
+
+Find the list of PEPs https://www.python.org/dev/peps/[here:]
+
+== True or false?
+
+Every object in Python has a truth value associated with it, in that the object evaluates to either `True` or `False`. Something is `False` if it evaluates to 0, the value `None`, an empty string, or an empty built-in data structure. Every other object in Python evaluates to `True`.
+
+[TIP]
+We can pass any object to the `bool` function and determine whether it is
+`True` or `False`. Critically, any nonempty data structure evaluates to `True`.
+
+== Functions
+
+. Function annotations are optional
+It’s OK not to use them. In fact, a lot of existing Python code doesn’t (as they were only made available to programmers in the most recent versions of Python 3).
+. Function annotations are informational
+They provide details about your function, but they do not imply any other behavior (such as type checking).
+
+[TIP]
+For more details on annotations, see https://www.python.org/dev/peps/pep-3107/[PEP 3107].
+
+[IMPORTANT]
+The goal of annotations is not to make life easier for the interpreter; it’s to make
+life easier for the user of your function. Annotations are a documentation
+standard, not a type enforcement mechanism.
+
+In fact, the interpreter does not care what type your arguments are, nor does it care what type of data your function returns. The interpreter calls your function with whatever arguments are provided to it (no matter their type), executes your function’s code, and then returns to the caller whatever value it is given by the return statement. The type of the data being passed back and forth is not considered by the interpreter
+
+Source: Head-First Python Book.
 
 == Clean Code Practices:
 
