@@ -123,7 +123,7 @@ Find the list of PEPs https://www.python.org/dev/peps/[here:]
 
 Every object in Python has a truth value associated with it, in that the object evaluates to either `True` or `False`. Something is `False` if it evaluates to 0, the value `None`, an empty string, or an empty built-in data structure. Every other object in Python evaluates to `True`.
 
-[TIP]
+[NOTE]
 We can pass any object to the `bool` function and determine whether it is
 `True` or `False`. Critically, any nonempty data structure evaluates to `True`.
 
@@ -137,7 +137,7 @@ They provide details about your function, but they do not imply any other behavi
 [TIP]
 For more details on annotations, see https://www.python.org/dev/peps/pep-3107/[PEP 3107].
 
-[IMPORTANT]
+[WARNING]
 The goal of annotations is not to make life easier for the interpreter; it’s to make
 life easier for the user of your function. Annotations are a documentation
 standard, not a type enforcement mechanism.
