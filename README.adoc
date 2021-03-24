@@ -1,5 +1,5 @@
 = Python
-
+:toc:
 :icons: font
 :icon-set: fa
 :source-highlighter: rouge
